@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBF1"
+    tools:context="com.project.achemei.Activities.RegisterActivity">
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFC100"
+        android:text="@string/reg_button"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/reg_scrollview"
+        android:layout_width="match_parent"
+        android:layout_above="@id/next_btn"
+        android:layout_height="464dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/action_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/user_activity"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/action_spinner"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp" />
+
+            <EditText
+                android:id="@+id/et_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/edittext_shadow"
+                android:ems="10"
+                android:hint="@string/nome_da_empresa"
+                android:inputType="text"
+                android:lines="1" />
+
+            <EditText
+                android:id="@+id/et_cnpj"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/edittext_shadow"
+                android:hint="Endereço"
+                android:inputType="phone"
+                android:lines="1"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/location_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="#515151"
+                android:drawableLeft="@drawable/ic_location_on_black_48dp"
+                android:drawablePadding="@dimen/place_autocomplete_button_padding"
+                android:drawableRight="@android:drawable/checkbox_off_background"
+                android:drawableTint="@color/yellowColor"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:text="Local da Empresa"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/edittext_shadow"
+                android:ems="10"
+                android:hint="CNPJ"
+                android:inputType="phone"
+                android:lines="1" />
+
+            <EditText
+                android:id="@+id/et_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/edittext_shadow"
+                android:ems="10"
+                android:hint="Telefone"
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/edittext_shadow"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textPassword"
+                android:lines="1" />
+
+            <EditText
+                android:id="@+id/et_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/edittext_shadow"
+                android:ems="10"
+                android:hint="Senha"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

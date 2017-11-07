@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBF1"
+    android:orientation="vertical"
+    tools:context="com.project.achemei.Activities.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/edittext_shadow"
+        android:ems="10"
+        android:hint="email@email.com"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/edittext_shadow"
+        android:ems="10"
+        android:hint="senha"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="24dp"
+            android:layout_weight="1"
+            android:background="#FFC100"
+            android:text="@string/login_button"
+            android:textColor="#515151" />
+
+        <Button
+            android:id="@+id/reg_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="#515151"
+            android:text="@string/reg_button"
+            android:textColor="#FFC100" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:gravity="end"
+        android:text="@string/tv_use_terms"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:gravity="end"
+        android:text="@string/tv_privacy"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>
+

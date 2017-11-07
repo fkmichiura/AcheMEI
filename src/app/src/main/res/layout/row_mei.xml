@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="#EBEBF1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/profile_image"
+            android:src="@drawable/ic_profile" />
+
+        <TextView
+            android:id="@+id/tv_employee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/iv_employee"
+            android:text="@string/row_company"
+            android:layout_toRightOf="@id/iv_employee" />
+
+        <TextView
+            android:id="@+id/tv_identification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@id/iv_employee"
+            android:text="@string/row_phone"
+            android:layout_toRightOf="@id/iv_employee"
+            android:layout_below="@id/tv_employee_name"/>
+
+        <TextView
+            android:id="@+id/tv_company_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/iv_employee"
+            android:text="@string/row_activity"
+            android:layout_toRightOf="@id/iv_employee"
+            android:layout_below="@id/tv_identification"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

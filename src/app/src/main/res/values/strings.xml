@@ -1,0 +1,45 @@
+<resources>
+
+    <string name="app_name">Box Service</string>
+    <string name="user_activity">Atividade</string>
+    <string name="next_button">AVANÇAR</string>
+    <string name="user_cnpj">CNPJ</string>
+    <string name="user_email">E-MAIL</string>
+    <string name="user_company">NOME DA EMPRESA</string>
+    <string name="user_pass">SENHA</string>
+    <string name="user_about">SOBRE</string>
+    <string name="user_phone">TELEFONE</string>
+    <string name="login_button">LOGIN</string>
+    <string name="reg_button">CADASTRAR</string>
+    <string name="logo">logo</string>
+    <string name="finish_button">FINALIZAR CADASTRO</string>
+    <string name="user_fullname">NOME</string>
+    <string name="user_number">NÚMERO</string>
+
+    <string-array name="actions_array">
+        <item>ELETRICISTA</item>
+        <item>BOLEIRA</item>
+        <item>VENDEDOR</item>
+        <item>SERRALHEIRO</item>
+        <item>MECÂNICO</item>
+        <item>PROFESSOR</item>
+        <item>CONTADOR</item>
+        <item>TÉCNICO DE INFORMÁTICA</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_value_table">* TABELA DE VALORES</string>
+    <string name="tv_privacy">* TERMOS DE PRIVACIDADE</string>
+    <string name="tv_use_terms">* TERMOS DE USO</string>
+    <string name="company_name">Nome da Empresa</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="profile_address">ENDEREÇO</string>
+    <string name="activity_name">Nome da Atividade</string>
+    <string name="row_phone">99988-7766</string>
+    <string name="row_company">Nome da Empresa</string>
+    <string name="row_activity">Atividade</string>
+    <string name="card_filling_notice">PREENCHA OS DADOS COMO NO CARTÃO.</string>
+    <string name="nome_da_empresa">Nome da Empresa</string>
+    <string name="logo_da_empresa">Logo da Empresa</string>
+</resources>
